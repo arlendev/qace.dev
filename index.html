@@ -39,9 +39,13 @@
       color: #555;
     }
 
-    a {
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .button {
       display: inline-block;
-      margin-top: 25px;
+      margin: 8px;
       padding: 12px 24px;
       text-decoration: none;
       background: #e7b92c;
@@ -50,7 +54,7 @@
       font-weight: bold;
     }
 
-    a:hover {
+    .button:hover {
       opacity: 0.9;
     }
   </style>
@@ -71,9 +75,21 @@
       🚧 Website under construction
     </p>
 
-    <a href="https://arlendev.github.io/qace-bug-lab/">
-      Visit QAce Bug Lab
-    </a>
+    <div class="buttons">
+      <a
+        class="button"
+        href="https://github.com/arlendev/qace-portfolio"
+      >
+        QA Portfolio
+      </a>
+
+      <a
+        class="button"
+        href="https://arlendev.github.io/qace-bug-lab/"
+      >
+        QAce Bug Lab
+      </a>
+    </div>
 
   </div>
 </body>
