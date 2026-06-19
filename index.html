@@ -8,7 +8,7 @@
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -41,17 +41,29 @@
 
     .buttons {
       margin-top: 30px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
     }
 
     .button {
-      display: inline-block;
-      margin: 8px;
+      width: 220px;
+      box-sizing: border-box;
+
       padding: 12px 24px;
+
       text-decoration: none;
+      text-align: center;
+
       background: #e7b92c;
       color: #222;
+
       border-radius: 8px;
       font-weight: bold;
+
+      transition: opacity 0.2s ease;
     }
 
     .button:hover {
@@ -76,6 +88,7 @@
     </p>
 
     <div class="buttons">
+
       <a
         class="button"
         href="https://github.com/arlendev/qace-portfolio"
@@ -89,6 +102,14 @@
       >
         QAce Bug Lab
       </a>
+
+      <a
+        class="button"
+        href="#"
+      >
+        About Me
+      </a>
+
     </div>
 
   </div>
