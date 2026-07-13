@@ -4,221 +4,239 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QA Projects - QAce</title>
 
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: #f5f7fa;
-        color: #222;
-        line-height: 1.6;
-      }
+```
+<meta
+  name="description"
+  content="Software Quality Assurance projects developed by Arlen Possamai as part of the QAce portfolio."
+/>
 
-      .container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 40px 20px;
-      }
+<title>QA Projects - QAce</title>
 
-      .logo {
-        text-align: center;
-        margin-bottom: 30px;
-      }
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+  }
 
-      .logo img {
-        max-width: 250px;
-        width: 100%;
-        height: auto;
-      }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
 
-      h1 {
-        text-align: center;
-        margin-bottom: 30px;
-      }
+  .logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-      h2 {
-        margin-top: 40px;
-        color: #333;
-      }
+  .logo img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+  }
 
-      p {
-        color: #444;
-      }
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-      ul {
-        padding-left: 20px;
-      }
+  h2 {
+    margin-top: 40px;
+    color: #333;
+  }
 
-      li {
-        margin-bottom: 8px;
-      }
+  p {
+    color: #444;
+  }
 
-      .buttons {
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        gap: 16px;
-        flex-wrap: wrap;
-      }
+  .intro {
+    margin-bottom: 45px;
+  }
 
-      .button {
-        width: 240px;
-        box-sizing: border-box;
-        padding: 12px 24px;
-        text-decoration: none;
-        text-align: center;
-        background: #e7b92c;
-        color: #222;
-        border-radius: 8px;
-        font-weight: bold;
-        transition: opacity 0.2s ease;
-      }
+  .project-card {
+    margin-top: 30px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  }
 
-      .button:hover {
-        opacity: 0.9;
-      }
+  .project-card h2 {
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
 
-      .project-buttons {
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-      }
-    </style>
+  .project-type {
+    margin-top: 0;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #666;
+  }
+
+  .project-status {
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    padding: 4px 12px;
+    background: #e9f5ec;
+    color: #256b36;
+    border-radius: 20px;
+    font-size: 0.88rem;
+    font-weight: bold;
+  }
+
+  .project-button {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    width: 240px;
+    box-sizing: border-box;
+    padding: 12px 24px;
+    text-decoration: none;
+    text-align: center;
+    background: #e7b92c;
+    color: #222;
+    border-radius: 8px;
+    font-weight: bold;
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  .future-projects {
+    margin-top: 55px;
+  }
+
+  .future-projects ul {
+    padding-left: 20px;
+  }
+
+  .future-projects li {
+    margin-bottom: 8px;
+  }
+
+  .footer-buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 30px 16px;
+    }
+
+    .project-card {
+      padding: 22px;
+    }
+
+    .button {
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+</style>
+
   </head>
 
   <body>
-    <div class="container">
+    <main class="container">
       <div class="logo">
-        <img src="qace-logo.png" alt="QAce Logo" />
+        <img src="assets/images/qace-logo.png" alt="QAce Logo" />
       </div>
 
-      <h1>QA Projects</h1>
+  <h1>QA Projects</h1>
 
-      <h2>QAce Bug Lab</h2>
+  <div class="intro">
+    <p>
+      This section presents practical Software Quality Assurance projects
+      developed to demonstrate testing methodologies, documentation
+      standards and continuous quality improvement.
+    </p>
 
-      <h3>Overview</h3>
+    <p>
+      Each project brings together planning, test execution, defect
+      reporting and evidence, providing concrete examples of how I approach
+      software quality in practice.
+    </p>
 
-      <p>
-        QAce Bug Lab is a custom-built testing laboratory created to support my
-        Quality Assurance learning journey.
-      </p>
+    <p>
+      The portfolio will continue to grow with new case studies covering web
+      applications, API testing and test automation.
+    </p>
+  </div>
 
-      <p>
-        The project was designed to provide a controlled environment where I can
-        practice software testing techniques, create documentation, execute test
-        cases and simulate real QA workflows.
-      </p>
+  <section class="project-card">
+    <h2>QAce Bug Lab</h2>
 
-      <p>
-        Rather than using third-party applications, I chose to build my own
-        testing environment so I could fully understand both the system behavior
-        and the testing process.
-      </p>
+    <p class="project-type">
+      Software Quality Assurance Case Study
+    </p>
 
-      <h3>Project Objectives</h3>
+    <span class="project-status">Active Project</span>
 
-      <ul>
-        <li>Practice manual testing activities</li>
-        <li>Create and maintain test documentation</li>
-        <li>Develop structured test cases</li>
-        <li>Execute regression testing</li>
-        <li>Validate bug fixes</li>
-        <li>Simulate real QA workflows</li>
-        <li>Support future test automation initiatives</li>
-      </ul>
+    <p>
+      QAce Bug Lab is a complete Quality Assurance case study built around a
+      custom-developed Vue.js web application.
+    </p>
 
-      <h3>Current Features</h3>
+    <p>
+      The project demonstrates the full manual testing lifecycle, including
+      test planning, functional testing, exploratory testing, regression
+      testing, defect reporting, evidence collection and professional QA
+      documentation.
+    </p>
 
-      <ul>
-        <li>User Authentication</li>
-        <li>Bug Catalog</li>
-        <li>Bug Details Modal</li>
-        <li>Create Bug</li>
-        <li>Update Bug</li>
-        <li>Delete Bug</li>
-        <li>Search Functionality</li>
-        <li>Filter Functionality</li>
-        <li>Local Storage Persistence</li>
-        <li>Responsive User Interface</li>
-      </ul>
+    <p>
+      It serves as the foundation of the QAce portfolio and will continue
+      evolving with API testing and test automation initiatives.
+    </p>
 
-      <h3>QA Activities Performed</h3>
-
-      <ul>
-        <li>Functional Testing</li>
-        <li>Test Case Design</li>
-        <li>Regression Testing</li>
-        <li>Defect Validation</li>
-        <li>Requirements Analysis</li>
-        <li>Test Documentation</li>
-        <li>Exploratory Testing</li>
-      </ul>
-
-      <h3>Technologies</h3>
-
-      <ul>
-        <li>Vue.js</li>
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>GitHub Pages</li>
-      </ul>
-
-      <div class="project-buttons">
-        <a
-          class="button"
-          href="https://github.com/arlendev/qace-bug-lab"
-          target="_blank"
-        >
-          View Repository
-        </a>
-
-        <a
-          class="button"
-          href="https://github.com/arlendev/qace-bug-lab/blob/main/docs/test-plan.md"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Test Plan
-        </a>
-
-        <a class="button" href="test-documentation.html"> View Test Cases </a>
-
-        <a class="button" href="bug-reports.html"> View Bug Reports </a>
-
-        <a
-          class="button"
-          href="https://arlendev.github.io/qace-bug-lab/"
-          target="_blank"
-        >
-          Launch QAce Bug Lab
-        </a>
-      </div>
-
-      <h3>Future Evolution</h3>
-
-      <p>Planned future improvements include:</p>
-
-      <ul>
-        <li>Test Mode</li>
-        <li>Simulated Defects</li>
-        <li>Defect Reporting Examples</li>
-        <li>Regression Test Suites</li>
-        <li>API Testing Scenarios</li>
-        <li>Test Automation with Cypress</li>
-      </ul>
-
-      <p>
-        The project continues to evolve as part of my QA learning and portfolio
-        development.
-      </p>
-
-      <div class="buttons">
-        <a class="button" href="index.html"> Back to Home </a>
-      </div>
+    <div class="project-button">
+      <a class="button" href="qace-bug-lab.html">
+        View Project
+      </a>
     </div>
+  </section>
+
+  <section class="future-projects">
+    <h2>Future Projects</h2>
+
+    <p>
+      Additional Quality Assurance case studies will be added as the
+      portfolio evolves.
+    </p>
+
+    <p>Planned areas include:</p>
+
+    <ul>
+      <li>Web Application Exploratory Testing</li>
+      <li>API Testing with Postman</li>
+      <li>Test Automation with Playwright</li>
+      <li>Accessibility and Usability Testing</li>
+      <li>Testing of Real-World Public Applications</li>
+    </ul>
+  </section>
+
+  <div class="footer-buttons">
+    <a class="button" href="index.html">
+      Back to Home
+    </a>
+  </div>
+</main>
+```
+
   </body>
 </html>
