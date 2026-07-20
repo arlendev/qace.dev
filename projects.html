@@ -1,154 +1,150 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-```
-<meta
-  name="description"
-  content="Software Quality Assurance projects developed by Arlen Possamai as part of the QAce portfolio."
-/>
+    <meta
+      name="description"
+      content="Software Quality Assurance projects developed by Arlen Possamai as part of the QAce portfolio."
+    />
 
-<title>QA Projects - QAce</title>
+    <title>QA Projects - QAce</title>
 
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f5f7fa;
-    color: #222;
-    line-height: 1.6;
-  }
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f5f7fa;
+        color: #222;
+        line-height: 1.6;
+      }
 
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
 
-  .logo {
-    text-align: center;
-    margin-bottom: 30px;
-  }
+      .logo {
+        text-align: center;
+        margin-bottom: 30px;
+      }
 
-  .logo img {
-    max-width: 250px;
-    width: 100%;
-    height: auto;
-  }
+      .logo img {
+        max-width: 250px;
+        width: 100%;
+        height: auto;
+      }
 
-  h1 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
 
-  h2 {
-    margin-top: 40px;
-    color: #333;
-  }
+      p {
+        color: #444;
+      }
 
-  p {
-    color: #444;
-  }
+      .intro {
+        margin-bottom: 45px;
+      }
 
-  .intro {
-    margin-bottom: 45px;
-  }
+      .project-card {
+        margin-top: 30px;
+        padding: 30px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      }
 
-  .project-card {
-    margin-top: 30px;
-    padding: 30px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  }
+      .project-card h2 {
+        margin-top: 0;
+        margin-bottom: 4px;
+        color: #333;
+      }
 
-  .project-card h2 {
-    margin-top: 0;
-    margin-bottom: 4px;
-  }
+      .project-type {
+        margin-top: 0;
+        font-size: 0.95rem;
+        font-weight: bold;
+        color: #666;
+      }
 
-  .project-type {
-    margin-top: 0;
-    font-size: 0.95rem;
-    font-weight: bold;
-    color: #666;
-  }
+      .project-status {
+        display: inline-block;
+        margin-top: 8px;
+        margin-bottom: 14px;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.88rem;
+        font-weight: bold;
+      }
 
-  .project-status {
-    display: inline-block;
-    margin-top: 8px;
-    margin-bottom: 14px;
-    padding: 4px 12px;
-    background: #e9f5ec;
-    color: #256b36;
-    border-radius: 20px;
-    font-size: 0.88rem;
-    font-weight: bold;
-  }
+      .project-status.active {
+        background: #e9f5ec;
+        color: #256b36;
+      }
 
-  .project-button {
-    margin-top: 24px;
-    display: flex;
-    justify-content: center;
-  }
+      .project-status.coming-soon {
+        background: #fff4cc;
+        color: #7a5b00;
+      }
 
-  .button {
-    width: 240px;
-    box-sizing: border-box;
-    padding: 12px 24px;
-    text-decoration: none;
-    text-align: center;
-    background: #e7b92c;
-    color: #222;
-    border-radius: 8px;
-    font-weight: bold;
-    transition:
-      opacity 0.2s ease,
-      transform 0.2s ease;
-  }
+      .project-button {
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+      }
 
-  .button:hover {
-    opacity: 0.9;
-    transform: translateY(-1px);
-  }
+      .button {
+        width: 240px;
+        box-sizing: border-box;
+        padding: 12px 24px;
+        text-decoration: none;
+        text-align: center;
+        background: #e7b92c;
+        color: #222;
+        border-radius: 8px;
+        font-weight: bold;
+        transition:
+          opacity 0.2s ease,
+          transform 0.2s ease;
+      }
 
-  .future-projects {
-    margin-top: 55px;
-  }
+      .button:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+      }
 
-  .future-projects ul {
-    padding-left: 20px;
-  }
+      .button.disabled {
+        background: #d8dde3;
+        color: #6b7280;
+        cursor: not-allowed;
+        pointer-events: none;
+      }
 
-  .future-projects li {
-    margin-bottom: 8px;
-  }
+      .footer-buttons {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+      }
 
-  .footer-buttons {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-  }
+      @media (max-width: 600px) {
+        .container {
+          padding: 30px 16px;
+        }
 
-  @media (max-width: 600px) {
-    .container {
-      padding: 30px 16px;
-    }
+        .project-card {
+          padding: 22px;
+        }
 
-    .project-card {
-      padding: 22px;
-    }
-
-    .button {
-      width: 100%;
-      max-width: 280px;
-    }
-  }
-</style>
-
+        .button {
+          width: 100%;
+          max-width: 280px;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -157,86 +153,128 @@
         <img src="assets/images/qace-logo.png" alt="QAce Logo" />
       </div>
 
-  <h1>QA Projects</h1>
+      <h1>QA Projects</h1>
 
-  <div class="intro">
-    <p>
-      This section presents practical Software Quality Assurance projects
-      developed to demonstrate testing methodologies, documentation
-      standards and continuous quality improvement.
-    </p>
+      <div class="intro">
+        <p>
+          This section presents practical Software Quality Assurance projects
+          developed to demonstrate testing methodologies, documentation
+          standards and continuous quality improvement.
+        </p>
 
-    <p>
-      Each project brings together planning, test execution, defect
-      reporting and evidence, providing concrete examples of how I approach
-      software quality in practice.
-    </p>
+        <p>
+          Each project brings together planning, test execution, defect
+          reporting and evidence, providing concrete examples of how I approach
+          software quality in practice.
+        </p>
 
-    <p>
-      The portfolio will continue to grow with new case studies covering web
-      applications, API testing and test automation.
-    </p>
-  </div>
+        <p>
+          The portfolio will continue to grow with new case studies covering web
+          applications, API testing and test automation.
+        </p>
+      </div>
 
-  <section class="project-card">
-    <h2>QAce Bug Lab</h2>
+      <section class="project-card">
+        <h2>QAce Bug Lab</h2>
 
-    <p class="project-type">
-      Software Quality Assurance Case Study
-    </p>
+        <p class="project-type">
+          Software Quality Assurance Case Study
+        </p>
 
-    <span class="project-status">Active Project</span>
+        <span class="project-status active">Active Project</span>
 
-    <p>
-      QAce Bug Lab is a complete Quality Assurance case study built around a
-      custom-developed Vue.js web application.
-    </p>
+        <p>
+          QAce Bug Lab is a complete Quality Assurance case study built around a
+          custom-developed Vue.js web application.
+        </p>
 
-    <p>
-      The project demonstrates the full manual testing lifecycle, including
-      test planning, functional testing, exploratory testing, regression
-      testing, defect reporting, evidence collection and professional QA
-      documentation.
-    </p>
+        <p>
+          The project demonstrates the full manual testing lifecycle, including
+          test planning, functional testing, exploratory testing, regression
+          testing, defect reporting, evidence collection and professional QA
+          documentation.
+        </p>
 
-    <p>
-      It serves as the foundation of the QAce portfolio and will continue
-      evolving with API testing and test automation initiatives.
-    </p>
+        <p>
+          It serves as the foundation of the QAce portfolio and will continue
+          evolving with API testing and test automation initiatives.
+        </p>
 
-    <div class="project-button">
-      <a class="button" href="qace-bug-lab.html">
-        View Project
-      </a>
-    </div>
-  </section>
+        <div class="project-button">
+          <a class="button" href="qace-bug-lab.html">
+            View Project
+          </a>
+        </div>
+      </section>
 
-  <section class="future-projects">
-    <h2>Future Projects</h2>
+      <section class="project-card">
+        <h2>QAce API Testing</h2>
 
-    <p>
-      Additional Quality Assurance case studies will be added as the
-      portfolio evolves.
-    </p>
+        <p class="project-type">
+          REST API Testing Portfolio
+        </p>
 
-    <p>Planned areas include:</p>
+        <span class="project-status active">Active Project</span>
 
-    <ul>
-      <li>Web Application Exploratory Testing</li>
-      <li>API Testing with Postman</li>
-      <li>Test Automation with Playwright</li>
-      <li>Accessibility and Usability Testing</li>
-      <li>Testing of Real-World Public Applications</li>
-    </ul>
-  </section>
+        <p>
+          QAce API Testing is a professional REST API testing project built with
+          Postman.
+        </p>
 
-  <div class="footer-buttons">
-    <a class="button" href="index.html">
-      Back to Home
-    </a>
-  </div>
-</main>
-```
+        <p>
+          The project demonstrates API testing, request validation, response
+          verification, test scenarios, documentation and quality assurance
+          best practices.
+        </p>
 
+        <p>
+          It is part of the QAce Ecosystem and will continue evolving with new
+          scenarios, collections and automated validations.
+        </p>
+
+        <div class="project-button">
+          <a class="button" href="qace-api-testing.html">
+            View Project
+          </a>
+        </div>
+      </section>
+
+      <section class="project-card">
+        <h2>QAce Automation</h2>
+
+        <p class="project-type">
+          UI Test Automation Portfolio
+        </p>
+
+        <span class="project-status coming-soon">Coming Soon</span>
+
+        <p>
+          QAce Automation is an end-to-end UI test automation project built with
+          Playwright.
+        </p>
+
+        <p>
+          The project will demonstrate automated functional testing, regression
+          testing, reusable test architecture and CI-ready workflows.
+        </p>
+
+        <p>
+          It will complete the QAce Ecosystem by connecting manual testing, API
+          testing and modern browser automation.
+        </p>
+
+        <div class="project-button">
+          <span class="button disabled" aria-disabled="true">
+            Coming Soon
+          </span>
+        </div>
+      </section>
+
+      <div class="footer-buttons">
+        <a class="button" href="index.html">
+          Back to Home
+        </a>
+      </div>
+    </main>
   </body>
 </html>
